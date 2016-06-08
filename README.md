@@ -2,9 +2,9 @@
 
 a js script for Dnspod DDNS
 
-## usage
+## Qick Start
 
-```Qick Start
+```bash
 git clone git@github.com:inlost/dnspod_ddns.git
 cd dnspod_ddns
 chmod u+x dnspod.js
