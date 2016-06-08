@@ -4,6 +4,8 @@ a js script for Dnspod DDNS
 
 ## Qick Start
 
+[get Dnspod token](https://support.dnspod.cn/Kb/showarticle/tsid/227)
+
 ```bash
 git clone git@github.com:inlost/dnspod_ddns.git
 cd dnspod_ddns
