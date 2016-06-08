@@ -8,7 +8,7 @@ a js script for Dnspod DDNS
 git clone git@github.com:inlost/dnspod_ddns.git
 cd dnspod_ddns
 chmod u+x dnspod.js
-./dnspod.js $token $domain $ip(option){:target="_blank"}
+./dnspod.js $token $domain $ip(option)
 
 #example
 ./dnspod.js 1666,1f3480b4620335639 ddns.cloudlii.com 5.5.5.4
@@ -17,4 +17,4 @@ chmod u+x dnspod.js
 ```
 ## GET Dnspod Token
 
-https://support.dnspod.cn/Kb/showarticle/tsid/227
+[docs](https://support.dnspod.cn/Kb/showarticle/tsid/227){{:target="_blank"}}
