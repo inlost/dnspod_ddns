@@ -3,6 +3,7 @@
 'use strict';
 
 const spawn = require('child_process').spawn;
+const os = require('os');
 const args = process.argv;
 
 const API_TYPE = {
@@ -30,14 +31,21 @@ let recordLine = '默认';
 let ip = '';
 
 
-if(args.length !== 5){
+if(args.length < 4){
     return console.log('need args');
 }
+
+const netInterface = os.networkInterfaces().eth0 || os.networkInterfaces().en0;
+netInterface.forEach((intf) => {
+    if(intf.family === 'IPv4'){
+        ip = intf.address;
+    }
+});
 
 token = args[2];
 subDomain = args[3].split('.')[0];
 domain = args[3].replace(`${subDomain}.`, '');
-ip = args[4];
+ip = args[4] || ip;
 
 pars.set('login_token', token);
 pars.set('format', 'json');
