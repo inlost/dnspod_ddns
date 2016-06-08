@@ -17,4 +17,4 @@ chmod u+x dnspod.js
 ```
 ## GET Dnspod Token
 
-[docs](https://support.dnspod.cn/Kb/showarticle/tsid/227){{:target="_blank"}}
+[docs](https://support.dnspod.cn/Kb/showarticle/tsid/227){:target="_blank"}
